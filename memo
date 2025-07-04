@@ -1,0 +1,51 @@
+
+■構造
+src/
+├── assets/              # 画像、フォント、アイコンなどの静的アセット
+│   ├── images/
+│   ├── fonts/
+│   └── icons/
+├── components/          # 再利用可能なUIコンポーネント
+│   ├── Button/
+│   │   ├── Button.tsx
+│   │   ├── Button.module.scss
+│   │   └── index.ts
+│   └── Header/
+│       ├── Header.tsx
+│       ├── Header.module.scss
+│       └── index.ts
+├── hooks/               # カスタムフック
+│   ├── useAuth.ts
+│   └── useFetch.ts
+├── layouts/             # ページ全体のレイアウト
+│   ├── MainLayout/
+│   │   ├── MainLayout.tsx
+│   │   ├── MainLayout.module.scss
+│   │   └── index.ts
+│   └── AuthLayout/
+│       ├── AuthLayout.tsx
+│       ├── AuthLayout.module.scss
+│       └── index.ts
+├── pages/               # 各ページ（ルーティング単位）
+│   ├── Home/
+│   │   ├── Home.tsx
+│   │   ├── Home.module.scss
+│   │   └── index.ts
+│   └── About/
+│       ├── About.tsx
+│       ├── About.module.scss
+│       └── index.ts
+├── styles/              # グローバルスタイル、SCSS変数、ミックスイン
+│   ├── variables.scss
+│   ├── mixins.scss
+│   ├── base.scss
+│   └── reset.scss
+├── utils/               # ヘルパー関数やユーティリティ
+│   ├── api.ts
+│   └── formatDate.ts
+├── types/               # TypeScriptの型定義
+│   ├── user.ts
+│   └── apiResponses.ts
+├── App.tsx              # アプリのエントリポイント
+├── main.tsx             # Viteがエントリとして使用するファイル
+└── vite-env.d.ts        # Vite用の型定義

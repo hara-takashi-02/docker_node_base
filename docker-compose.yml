@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: app
+    build: 
+      context: .
+      dockerfile: ./docker/php/Dockerfile
+    ports:
+      - "8080:80"
+      - 5173:5173
+    volumes:
+      - ./html/:/home/html:cached

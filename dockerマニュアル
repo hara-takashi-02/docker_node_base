@@ -1,0 +1,88 @@
+docker
+cd /Users/takashi/Documents/個人開発/docker/React/sample
+
+composer create-project --prefer-dist "laravel/laravel=8.*" .
+
+■docker操作
+docker-compose build
+docker-compose up -d
+docker-compose up --build -d
+docker-compose restart
+docker-compose down
+docker-compose stop
+docker compose down --rmi all --volumes --remove-orphans
+
+■コンテナに入る
+docker-compose exec app bash
+
+VirtualHostの場所
+cd /etc/apache2/sites-available
+■コンテナ一覧
+docker ps -a
+
+■ビルド(scssコンパイル)
+npm run dev
+npm run watch(自動コンパイル)
+解除はcontrol＋c
+
+■tsビルド
+docker-compose run app npm run dev
+
+■npmパッケージの操作
+npm install
+$npm ls
+
+■vue操作(vue3)
+npm list vue
+npm install vue@next
+npm install vue-loader@next -D
+npm install vue-router@next
+npm install vuex@next
+
+npm list vue
+Vue CLIのバージョンを確認する
+vue -V
+
+
+"dependencies": {
+    "vue-router": "3.0.7"
+    }
+
+Linux系OSへPHP拡張モジュールのGD（画像変換モジュール）をインストール
+https://noel-ingenieur.hateblo.jp/entry/2020/11/04/150912
+祝日をプログラムで判定する
+https://qiita.com/Uchikoba/items/7174204a9a8eaa2fb79e
+
+ひと言掲示板を作る
+https://gray-code.com/php/make-the-board-vol1/
+
+DockerでLaravel+MySQL+phpMyadminの環境構築
+https://qiita.com/tatema/items/9a541553058fdd7fd6a7
+
+絶対に失敗しないDockerでLaravel+Vueの実行環境（LEMP環境）を構築する方法〜前編〜
+https://qiita.com/shimotaroo/items/29f7878b01ee4b99b951
+
+【超入門】20分でLaravel開発環境を爆速構築するDockerハンズオン - Qiita
+https://qiita.com/ucan-lab/items/56c9dc3cf2e6762672f4
+
+【Docker】Laravel + Vue.js + MySQL + nginx + phpMyAdminの開発環境構築【LEMP環境】
+https://qiita.com/kazumakishimoto/items/1895866a4924c9cdaba4
+
+【Vue + vue-cli】vue-routerの基本的な使い方
+https://www.dailyupblog.com/web_development/754/#chapter-4
+
+Laravel + vue.jsでシンプルファイルアップロード
+https://reffect.co.jp/vue/vue-js-laravel-file-upload#vuejs
+
+DockerでVue.js環境を構築（VueCli）
+https://zenn.dev/tasuya/articles/ad5d71c46db516
+
+DockerとVue CLIでVue.jsの開発環境を作成する方法！
+https://codelikes.com/docer-vue-cli/
+
+Laravel8 Fortify Sanctum SPA認証 Vue.js3をDockerで環境構築する
+https://saunabouya.com/2022/01/27/laravel8-fortify-sanctum-vue-js3-compositon-api-1/#Vuejs
+
+vue公式
+https://jp.vuejs.org/v2/guide/single-file-components.html
+
